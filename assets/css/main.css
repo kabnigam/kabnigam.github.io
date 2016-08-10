@@ -1449,13 +1449,17 @@
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: inherit;
 		text-decoration: none;
 	}
 
-		a:hover {
+		a {
 			border-bottom-color: transparent;
+		}
+
+    #ext-link:hover {
+			color: #00ffea;
 		}
 
 	strong, b {
@@ -2384,7 +2388,7 @@
 			position: relative;
 			text-align: left;
 			width: 50%;
-			height: 215px;
+
 		}
 
 			.features li:nth-child(1) {
@@ -2502,12 +2506,12 @@
 			-ms-order: 1;
 			order: 1;
 			border-radius: 0;
-			width: 40%;
+
 		}
 
 			.spotlight .image img {
 				border-radius: 0;
-				width: 540px;
+				width: 500px;
 				height: 300px;
 				margin: 0 auto;
 			}
@@ -2518,7 +2522,7 @@
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
-			max-width: 48em;
+			/*max-width: 48em;*/
 			width: 60%;
 		}
 
@@ -2572,7 +2576,7 @@
 		@media screen and (max-width: 1280px) {
 
 			.spotlight .image {
-				width: 45%;
+				/*width: 45%;*/
 			}
 
 			.spotlight .content {
@@ -2582,6 +2586,10 @@
 		}
 
 		@media screen and (max-width: 980px) {
+
+			#banner h2 {
+				padding: 0.35em .5em;
+			}
 
 			.spotlight {
 				display: block;
@@ -3531,6 +3539,16 @@
 			top: 0;
 			opacity: 0;
 		}
+		@media screen and (max-width: 980px) {
+
+
+
+				#banner h2 {
+
+					padding: 0.35em .5em;
+				}
+			}
+
 
 		@media screen and (max-width: 736px) {
 
@@ -3542,6 +3560,7 @@
 
 				#banner h2 {
 					font-size: 1.25em;
+					padding: 0.35em .5em;
 				}
 
 				#banner br {
@@ -3851,3 +3870,12 @@
 	.is-mobile #banner h2.nigam:after {
 		background: white;
 	}
+
+  .spotlight h2:hover {
+    color: #00ffea;
+    cursor: pointer;
+  }
+
+  .icon:hover {
+    background-color: black;
+  }
